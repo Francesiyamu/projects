@@ -9,19 +9,20 @@ body{
     font-size: 16px;
     background-color: hsl(30, 54%, 90%);
     padding: 128px 48px;
-    width:1440px;
-    height: 1956px;
+    width: 100%;
+    max-width:1440px;
+    height: auto;
 }
 
 .inner-box{
-    width : 740px;
-    height: 1700px;
+    width: 90%;
+    max-width : 740px;
+    height: auto;
     background-color: #fff;
     margin: auto;
     border-radius: 24px;  
     padding: 40px;
 }
-
 
 
 .image img{
@@ -33,6 +34,7 @@ body{
 
 #section-1 h1{
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 main{
@@ -42,10 +44,93 @@ main{
 }
 
 .boxes{
-    border: 1px #ccc solid;
-    padding: 40px;
-    margin: 32px 0 32px 0;
+    padding: 20px;
+    margin: 32px 0 32px 0; 
+    line-height: 1.5em;   
 }
+
+
+h2, h3{
+    color:  hsl(332, 51%, 32%);
+}
+
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+}
+
+#ingredients, 
+#instruction{
+    border-bottom: 2px solid  hsl(330, 100%, 98%);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen and (max-width:992px){
+    body{
+        width: 768px;
+        height: 2100px;
+    }
+    
+    .inner-box{
+        width : 616px;
+        height: 1844px;
+        background-color: #fff;
+        margin: auto;
+        border-radius: 24px;  
+        padding: 40px;
+    }
+
+    .image img{
+        border-radius: 24px;
+        width: 536px;
+        height: 300px
+    }
+
+    main{
+        width: 536px;
+        height: 1424px;
+        
+    }
+    
+}
+
+
+@media screen and (max-width:375px){
+    body{
+        width: 375px;
+        height: 2040px;
+    }
+    
+    .inner-box{
+        width : 375px;
+        height: 1872px;
+        
+    }
+
+    .image img{
+        border-radius: 24px;
+        width: 375px;
+        height: 175px
+    }
+
+    main{
+        width: 375px;
+        height: 1872px;
+        
+    }
+    
+}
