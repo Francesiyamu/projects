@@ -127,18 +127,18 @@ th, td {
     }
     
     .inner-box{
-        width: 100%; /* Make the inner box responsive */
-        padding: 16px; /* Adjust padding for smaller screens */
+        width: 100%; 
+        padding: 16px; 
         
     }
 
     .image img{
-        width: 100%; /* Make the image responsive */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
 
     main{
-        width: 100%; /* Make the main content responsive */
+        width: 100%; 
         height: auto; /* Remove fixed height */
         
     }
